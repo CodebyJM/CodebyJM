@@ -50,7 +50,7 @@ export default function About({}: Props) {
       transition={{
         duration: 1.2
       }}
-      src="/wp-content/uploads/2023/02/IMG_2893.jpg"
+      src="https://joaom16.sg-host.com/wp-content/uploads/2023/02/IMG_2893.jpg"
       className="mb-20 md:mb-0 flex-shrink-0 w-56 h-26  ml-auto rounded-full object-cover md:rounded-lg  md:w-[500px] md:h-[600px]"
       />
 
