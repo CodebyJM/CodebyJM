@@ -1,0 +1,192 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-transparent rounded-md uppercase text-sm text-gray-500 tracking-widest transition-all hover:border-[#00ffd5]/40
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Staatliches;
+}
+
+.h1{
+  font-size: 5.653rem;
+}
+
+.h2 {
+  font-size: 3.998rem;
+}
+
+.h3{
+  font-size: 2.827rem;
+}
+.h4{
+  font-size: 1.999rem;
+}
+.h5{
+  font-size: 1.414rem;
+}
+.h6{
+  font-size: 1rem;
+}
+
+.content{
+  line-height: 2;
+  font-size: 1.414rem;
+}
+
+.base-font{
+  font-family: sans-serif;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: Staatliches;
+}
+.logo{
+  font-family: Staatliches;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+#category {
+  font-family: Staatliches;
+  font-weight: 500;
+}
+
+#title {
+  letter-spacing: 0.4px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.13636;
+}
+
+#banner {
+  margin: 20px;
+  height: 800px;
+}
+
+#editor {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.uk-navbar-container {
+  background: #fff !important;
+  font-family: Staatliches;
+}
+
+img:hover {
+  opacity: 1;
+  transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+article {
+    min-width: 66%;
+    max-width: 850px;
+    font-size: 1.5rem;
+}
+
+code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#00ffd5, #00ffd5);
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  color: white;
+}
+
+
+
+.grid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+}
+
+.card {
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    background: var(--lapis-gradient)
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: white;
+    border-color: white;
+    text-decoration: underline;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card .date {
+  margin-top: 1rem;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.logo {
+    height: 1em;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
