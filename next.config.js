@@ -6,5 +6,6 @@ module.exports = {
     loader: 'default',
     domains: ['localhost'],
   },
-  
 };
+
+

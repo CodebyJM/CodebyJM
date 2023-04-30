@@ -65,10 +65,10 @@ export default function About({}: Props) {
             href="/blog"
             className="link link-underline link-underline-black hover:text-white"
           >
-            software&nbsp;development
+            software&nbsp;development,
           </Link>{' '}
           design, and life. In my free time, I enjoy practicing Brazilian Jiu-Jitsu, gaming, and hanging out with wife.</p>
-          <div className='content text-white max-w-md'><span className="font-bold">TL;DR </span> I love Jesus, my family, coding, coffee, fitness, and tech.</div>
+          <div className='content text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
       <h4 className='text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
       

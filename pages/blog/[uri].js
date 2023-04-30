@@ -37,7 +37,7 @@ export default function SlugPage({ post }) {
             &nbsp;&nbsp;{dateFormatter.format(new Date(post.date))}
           </p>
         </div>
-        <article class="lead leading-loose" dangerouslySetInnerHTML={{ __html: post.content }}></article>
+        <article className="lead leading-loose" dangerouslySetInnerHTML={{ __html: post.content }}></article>
       </main>
 
       
