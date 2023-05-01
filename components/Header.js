@@ -4,6 +4,9 @@ import { client } from '../lib/apollo'
 import { gql } from '@apollo/client'
 import { useState } from 'react'
 
+
+
+
 export default function Nav({ post }) {
   const [navbar, setNavbar] = useState(false)
   return (
@@ -38,7 +41,9 @@ export default function Nav({ post }) {
             className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
             onClick={() => setNavbar(!navbar)}
           >
-            {navbar ? (
+            {navbar 
+            ? (
+              
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6 text-white"
@@ -70,9 +75,9 @@ export default function Nav({ post }) {
           </button>
         </div>
 
-        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <div class="relative w-full md:flex md:items-center md:w-auto" id="menu">
           <div
-            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 bg-[rgb(0,0,0)] z-50	right-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >
@@ -89,6 +94,7 @@ export default function Nav({ post }) {
                 <Link
                   class="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
                   href="#about"
+              
                 >
                   About
                 </Link>

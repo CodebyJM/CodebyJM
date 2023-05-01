@@ -31,7 +31,7 @@ export default function About({}: Props) {
     ))
   }
   return (
-    <div className='flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-top py-16 max-w-7xl"'>
+    <div className='flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-top py-16 max-w-7xl' >
     <motion.div
     
      initial={{ opacity: 0}}
@@ -60,14 +60,7 @@ export default function About({}: Props) {
           <div className="underline decoration-[#00ffd5]">About</div>
         </h1>
       <p className=' content text-white max-w-md leading-[3rem]'>
-      As a software developer, I have a versatile skill set that encompasses both client-side and server-side development. I adopt an agile and collaborative approach to work and always strive for self-improvement. I have a passion for{' '}
-      <Link
-            href="/blog"
-            className="link link-underline link-underline-black hover:text-white"
-          >
-            software&nbsp;development,
-          </Link>{' '}
-          design, and life. In my free time, I enjoy practicing Brazilian Jiu-Jitsu, gaming, and hanging out with wife.</p>
+      During my journey, I have had the privilege of collaborating with incredible engineers, designers, business analysts, and product owners. I understand the significance of reusability and scalability in enterprise-level applications, and I place great emphasis on delivering an exceptional user experience. In my free time, I enjoy practicing Brazilian Jiu-Jitsu, gaming, and hanging out with my wife.</p>
           <div className='content text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
       <h4 className='text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
