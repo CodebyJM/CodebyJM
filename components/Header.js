@@ -10,7 +10,7 @@ import { useState } from 'react'
 export default function Nav({ post }) {
   const [navbar, setNavbar] = useState(false)
   return (
-    <div className="bg-[rgb(0,0,0)] z-50 mx-auto max-w-7xl px-10">
+    <div className="bg-[#181818] z-50 mx-auto max-w-7xl px-10">
       <nav
         class="
       flex flex-wrap
@@ -77,7 +77,7 @@ export default function Nav({ post }) {
 
         <div class="relative w-full md:flex md:items-center md:w-auto" id="menu">
           <div
-            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 bg-[rgb(0,0,0)] z-50	right-0 ${
+            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 px-5 md:p-0 bg-[#181818] z-50	right-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >

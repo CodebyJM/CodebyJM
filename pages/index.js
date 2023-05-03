@@ -13,7 +13,7 @@ export default function Home({ posts, projects }) {
       <Head>
         <title>CodeByJM</title>
       </Head>
-      <div className="bg-[rgb(0,0,0)] text-white" id="about">
+      <div className="bg-[#181818] text-white" id="about">
         <section id="Header">
           <Header />
         </section>
@@ -68,6 +68,8 @@ export async function getStaticProps() {
           title
           uri
           content
+          date
+          modified
           acfProjects {
             source {
               url
