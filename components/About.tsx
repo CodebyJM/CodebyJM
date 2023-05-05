@@ -57,7 +57,7 @@ export default function About({}: Props) {
       />
 
     </motion.div>
-    <div className='space-y-10 px-10 md:px-10 flex-1 '>
+    <div className='space-y-10 md:px-10 flex-1 '>
         <h1 className="uppercase tracking-[2px] text-white text-6xl">
           <div className="underline decoration-[#00ffd5]">About</div>
         </h1>

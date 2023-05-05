@@ -21,7 +21,7 @@ export default function Nav({ post }) {
       container
       md:py-0
       mx-auto
-      px-10
+      md:px-10
       h-[10vh]
       text-lg 
       text-white

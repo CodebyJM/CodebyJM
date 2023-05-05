@@ -13,7 +13,7 @@ function Projects({ projects }) {
       className="relative px-10 mx-auto py-16 space-y-10"
     >
     <Heading title="Projects" />
-      <div className="gap-2 flex-wrap mx-auto justify-start px-10 max-w-7xl flex">
+      <div className="gap-2 flex-wrap mx-auto justify-start max-w-7xl flex">
         {projects.map((project, i) => {
           return (
                   <ProjectCard key={project.uri} post={project}></ProjectCard>

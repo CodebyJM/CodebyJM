@@ -20,7 +20,7 @@ export default function ProjectCard({ post }) {
       <p className="pt-4 text-lg text-center md:text-left ">{post.content}</p>
       <div class="pt-4 pb-2">
         <SocialIcon
-          url="https://linkedin.com/in/jaketrent"
+          url="#"
           network="github"
           bgColor="#fff"
           style={{ height: 30, width: 30 }}

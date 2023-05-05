@@ -14,7 +14,7 @@ export default function SlugPage({ post }) {
 
 
   return (
-    <div className='bg-[rgb(0,0,0)] text-white'>
+    <div className='bg-[#181818] text-white'>
       <Head>
         <title>{post.title}</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
