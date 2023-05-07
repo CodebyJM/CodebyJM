@@ -11,6 +11,7 @@ function Hero() {
           <div className="h4 text-[#8F9094] base-font">
             <span className="text-white">Software Engineer.</span><br></br> Self-taught with an interest in Web Development.
           </div>
+          
         </h1>
       </div>
       

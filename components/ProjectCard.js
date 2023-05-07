@@ -17,14 +17,16 @@ export default function ProjectCard({ post }) {
           {post.title} &rarr;
         </h3>
       </Link>
-      <p className="pt-4 text-lg text-center md:text-left ">{post.content}</p>
-      <div class="pt-4 pb-2">
+      <div class="flex pt-4 pb-2 gap-4 items-center ">
         <SocialIcon
-          url="#"
+          url={post.acfProjects.source.url}
           network="github"
           bgColor="#fff"
           style={{ height: 30, width: 30 }}
+          target="_blank"
+          rel="noopener noreferrer"
         />
+          <div  className="border-2 px-4 py-2 hover:no-underline rounded shadow" dangerouslySetInnerHTML={{ __html: post.content }}></div>
       </div>
     </div>
   )
