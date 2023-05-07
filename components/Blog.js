@@ -7,7 +7,7 @@ export default function SlugPage({ posts }) {
     <div className="relative text-center px-10 mx-auto py-16 space-y-10">
         <Heading title="Blog" />
 
-        <div className="grid max-w-7xl">
+        <div className="grid max-w-7xl px-10 ">
           {posts && posts.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
