@@ -8,6 +8,7 @@ type Props = {}
 export default function About({}: Props) {
   const skills = [
     'React',
+    'Typescript',
     'Javascript ES6+',
     'PHP',
     'MySQL',
@@ -18,8 +19,7 @@ export default function About({}: Props) {
     'GitHub',
     'Markup',
     'UI / UX',
-    'Google Analytics',
-    'Google Tag Manager',
+    'GA & Tag Manager',
     'Tailwinds',
     'Bootstrap',
     'Wordpress',

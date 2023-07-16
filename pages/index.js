@@ -33,6 +33,8 @@ export default function Home({ posts, projects }) {
         <section id="blogs">
           <Blog posts={posts} />
         </section>
+
+        <section id='content'></section>
       </div>
     </div>
   )
