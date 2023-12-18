@@ -12,11 +12,11 @@ export default function ProjectCard({ post }) {
       <p className="date text-[#00ffd5]">
         {dateFormatter.format(new Date(post.date))}
       </p>
-      <Link href={post.uri} className="hover:text-[#00ffd5]">
+      <a href={post.acfProjects.link.url} className="hover:text-[#00ffd5]" target="_blank" rel="noopener noreferrer">
         <h3 className="text-4xl font-semibold text-white pt-4">
           {post.title} &rarr;
         </h3>
-      </Link>
+      </a>
       <div class="flex pt-4 pb-2 gap-4 items-center ">
         <SocialIcon
           url={post.acfProjects.source.url}

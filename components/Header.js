@@ -12,7 +12,7 @@ export default function Nav({ post }) {
   return (
     <div className="bg-[#181818] z-50 mx-auto max-w-7xl px-10">
       <nav
-        class="
+        className="
       flex flex-wrap
       items-center
       justify-between
@@ -75,14 +75,14 @@ export default function Nav({ post }) {
           </button>
         </div>
 
-        <div class="relative w-full md:flex md:items-center md:w-auto" id="menu">
+        <div className="relative w-full md:flex md:items-center md:w-auto" id="menu">
           <div
             className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 px-5 md:p-0 bg-[#181818] z-50	right-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >
             <ul
-              class="
+              className="
           pt-4
           text-base 
           text-white
@@ -92,7 +92,7 @@ export default function Nav({ post }) {
             >
               <li>
                 <Link
-                  class="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
+                  className="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
                   href="#about"
               
                 >
@@ -101,7 +101,7 @@ export default function Nav({ post }) {
               </li>
               <li>
                 <Link
-                  class="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
+                  className="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
                   href="#projects"
                 >
                   Projects
@@ -109,7 +109,7 @@ export default function Nav({ post }) {
               </li>
               <li>
                 <Link
-                  class="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
+                  className="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
                   href="#blog"
                 >
                   Blog

@@ -38,15 +38,16 @@ export default function SlugPage({ post }) {
           </p>
         </div>
         <article className="lead leading-loose" dangerouslySetInnerHTML={{ __html: post.content }}></article>
-      </main>
+      </main>x
 
       
     </div>
   );
 }
-
 export async function getStaticProps({ params }) {
-  const GET_POST_BY_URI = gql`
+  const endpoint = 'http://localhost:10004/graphql';
+
+  const GET_POST_BY_URI = `
     query GetPostByUri($id: ID = "") {
       post(id: $id, idType: URI) {
         title
@@ -62,24 +63,22 @@ export async function getStaticProps({ params }) {
       }
     }
   `;
-  const response = await client.query({
-    query: GET_POST_BY_URI,
-    variables: {
-      id: params.uri,
-    },
+
+  const res = await fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      query: GET_POST_BY_URI,
+      variables: { id: params.uri },
+    }),
   });
-  const post = response?.data?.post;
+
+  const json = await res.json();
+  const post = json.data.post;
+
   return {
     props: {
       post,
     },
-  };
-}
-
-export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: 'blocking',
   };
 }

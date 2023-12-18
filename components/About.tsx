@@ -52,7 +52,7 @@ export default function About({}: Props) {
       transition={{
         duration: 1.2
       }}
-      src="https://joaom16.sg-host.com/wp-content/uploads/2023/02/IMG_2893.jpg"
+      src="https://wordpress-1182294-4149707.cloudwaysapps.com/wp-content/uploads/2023/02/IMG_2893.jpg"
       className="mb-20 md:mb-0 flex-shrink-0 w-56 h-26  m-auto rounded-full object-cover md:rounded-lg  md:w-[500px] md:h-[600px]"
       />
 

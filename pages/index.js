@@ -39,9 +39,10 @@ export default function Home({ posts, projects }) {
     </div>
   )
 }
-
 export async function getStaticProps() {
-  const GET_POSTS = gql`
+  const endpoint = process.env.NEXT_PUBLIC_WORDPRESS_API_URL + '/graphql';
+
+  const GET_POSTS = `
     query GetAllPosts {
       posts {
         nodes {
@@ -54,16 +55,9 @@ export async function getStaticProps() {
         }
       }
     }
-  `
-  const posts_response = await client.query({
-    query: GET_POSTS,
-  })
+  `;
 
-  console.log(posts_response)
-
-  const posts = posts_response?.data?.posts?.nodes
-
-  const GET_PROJECTS = gql`
+  const GET_PROJECTS = `
     query GetAllProjects {
       projects {
         nodes {
@@ -76,21 +70,48 @@ export async function getStaticProps() {
             source {
               url
             }
+            link {
+              url
+            }
           }
         }
       }
     }
-  `
-  const response = await client.query({
-    query: GET_PROJECTS,
-  })
+  `;
 
-  const projects = response?.data?.projects?.nodes
+  async function fetchGraphQL(query) {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query }),
+    });
+    const json = await res.json();
+    return json.data;
+  }
+
+  let posts = null;
+  let projects = null;
+
+  try {
+    const postsResponse = await fetchGraphQL(GET_POSTS);
+    posts = postsResponse.posts.nodes;
+    console.log(posts)
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+  }
+
+  try {
+    const projectsResponse = await fetchGraphQL(GET_PROJECTS);
+    projects = projectsResponse.projects.nodes;
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+  }
 
   return {
     props: {
       posts,
       projects,
     },
-  }
+    revalidate: 60,
+  };
 }
