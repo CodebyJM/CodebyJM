@@ -45,9 +45,7 @@ export default function SlugPage({ post }) {
   );
 }
 export async function getStaticProps({ params }) {
-  const endpoint = 'http://localhost:10004/graphql';
-
-  const GET_POST_BY_URI = `
+  const GET_POST_BY_URI = gql`
     query GetPostByUri($id: ID = "") {
       post(id: $id, idType: URI) {
         title
@@ -63,22 +61,24 @@ export async function getStaticProps({ params }) {
       }
     }
   `;
-
-  const res = await fetch(endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      query: GET_POST_BY_URI,
-      variables: { id: params.uri },
-    }),
+  const response = await client.query({
+    query: GET_POST_BY_URI,
+    variables: {
+      id: params.uri,
+    },
   });
-
-  const json = await res.json();
-  const post = json.data.post;
-
+  const post = response?.data?.post;
   return {
     props: {
       post,
     },
+  };
+}
+
+export async function getStaticPaths() {
+  const paths = [];
+  return {
+    paths,
+    fallback: 'blocking',
   };
 }
