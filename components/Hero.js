@@ -1,6 +1,5 @@
 import React from 'react'
 import BackgroundCircles from './BackgroundCircles'
-import { Alert } from 'flowbite-react'
 
 function Hero() {
   return (

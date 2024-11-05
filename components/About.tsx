@@ -7,23 +7,23 @@ type Props = {}
 
 export default function About({}: Props) {
   const skills = [
-    'React',
-    'Typescript',
-    'Javascript ES6+',
-    'PHP',
-    'MySQL',
-    'CSS',
     'HTML',
-    'SCSS',
-    'SASS',
+    'CSS',
+    'Javascript',
+    'PHP',
+    'Wordpress',
+    'Rest API',
+    'Graph QL',
+    'MySQL',
+    'Gutenberg',
+    'SCSS / SASS',
     'GitHub',
     'Markup',
     'UI / UX',
-    'GA & Tag Manager',
+    'GA4 & Tag Manager',
     'Tailwinds',
     'Bootstrap',
-    'Wordpress',
-    'Figma',
+    'React',
     'SEO',
   ]
 
@@ -52,7 +52,7 @@ export default function About({}: Props) {
       transition={{
         duration: 1.2
       }}
-      src="https://wordpress-1182294-4149707.cloudwaysapps.com/wp-content/uploads/2023/02/IMG_2893.jpg"
+      src="https://media.licdn.com/dms/image/v2/D4E03AQFAgn3bIg72eQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698342651877?e=1736380800&v=beta&t=FX8_ch1tYmjw0FcX5HoL5x3SSPEsXAFjzm8n6xy01A0"
       className="mb-20 md:mb-0 flex-shrink-0 w-56 h-26  m-auto rounded-full object-cover md:rounded-lg  md:w-[500px] md:h-[600px]"
       />
 
@@ -62,7 +62,7 @@ export default function About({}: Props) {
           <div className="underline decoration-[#00ffd5]">About</div>
         </h1>
       <p className=' content m-auto md:ml-0 text-white max-w-md leading-[3rem]'>
-      During my journey, I have had the privilege of collaborating with incredible engineers, designers, business analysts, and product owners. I understand the significance of reusability and scalability in enterprise-level applications, and I place great emphasis on delivering an exceptional user experience. In my free time, I enjoy practicing Brazilian Jiu-Jitsu, gaming, and hanging out with my wife.</p>
+      Throughout my journey, I've had the privilege of working alongside talented engineers, designers, business analysts, and product owners, each bringing unique perspectives that have deepened my understanding of collaboration and innovation. I place high value on creating applications that are not only reusable and scalable at an enterprise level but also deliver an exceptional user experience. Outside of work, I’m passionate about Brazilian Jiu-Jitsu, gaming, and spending quality time with my wife.</p>
           <div className='content m-auto md:ml-0 text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
       <h4 className='text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}

@@ -1,17 +1,21 @@
 import React from 'react'
-import PostCard from '../components/PostCard';
-import Heading from '../components/Heading';
+import PostCard from '../components/PostCard'
+import Heading from '../components/Heading'
 
 export default function SlugPage({ posts }) {
   return (
     <div className="relative text-center px-10 mx-auto py-16 space-y-10">
-        <Heading title="Blog" />
+      <Heading title="Blog" />
 
-        <div className="grid max-w-7xl px-10 gap-2">
+      <div className="text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <p>coming soon...</p>
+      </div>
+
+      {/* <div className="grid max-w-7xl px-10 gap-2">
           {posts && posts.map((post) => {
             return <PostCard key={post.uri} post={post}></PostCard>;
           })}
-        </div>
+        </div> */}
     </div>
-  );
+  )
 }
