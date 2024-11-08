@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import client from '../../lib/apolloClient';
+import client from '../../lib/apolloClient'
 import { gql } from '@apollo/client';
 import Header from '../../components/Header';
 import Link from 'next/link';
