@@ -12,19 +12,18 @@ export default function About({}: Props) {
     'Javascript',
     'PHP',
     'Wordpress',
+    'Gutenberg',
+    'React',
     'Rest API',
     'Graph QL',
     'MySQL',
-    'Gutenberg',
+    'Mongo DB',
     'SCSS / SASS',
-    'GitHub',
-    'Markup',
+    'Git / GitHub',
     'UI / UX',
-    'GA4 & Tag Manager',
     'Tailwinds',
-    'Bootstrap',
-    'React',
     'SEO',
+    'GA4 & Tag Manager',
   ]
 
   const renderHighlight = () => {
@@ -33,7 +32,7 @@ export default function About({}: Props) {
     ))
   }
   return (
-    <div className='flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-top py-16 max-w-7xl' >
+    <div className='flex flex-col relative text-center md:text-left md:flex-row px-10 justify-evenly mx-auto items-top py-16 max-w-7xl'>
     <motion.div
     
      initial={{ opacity: 0}}

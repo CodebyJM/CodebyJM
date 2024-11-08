@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         BASE_BLACK: '#242424',
         black: '000',
+        'custom-green': '#00ffd5',
       },
     },
   },

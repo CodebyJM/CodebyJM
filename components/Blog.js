@@ -2,20 +2,20 @@ import React from 'react'
 import PostCard from '../components/PostCard'
 import Heading from '../components/Heading'
 
-export default function SlugPage({ posts }) {
+export default function Blog({ posts }) {
   return (
     <div className="relative text-center px-10 mx-auto py-16 space-y-10">
       <Heading title="Blog" />
 
-      <div className="text-left max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <p>coming soon...</p>
+      <div className="grid max-w-7xl px-10 gap-2">
+        {posts && posts.length > 0 ? (
+          posts.map((post) => (
+            <PostCard key={post.uri} post={post} />
+          ))
+        ) : (
+          <p>No posts available.</p>
+        )}
       </div>
-
-      {/* <div className="grid max-w-7xl px-10 gap-2">
-          {posts && posts.map((post) => {
-            return <PostCard key={post.uri} post={post}></PostCard>;
-          })}
-        </div> */}
     </div>
   )
 }

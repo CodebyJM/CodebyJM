@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-import { client } from '../lib/apollo'
+import { client } from '../lib/apolloClient'
 import { gql } from '@apollo/client'
 import { useState } from 'react'
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 
