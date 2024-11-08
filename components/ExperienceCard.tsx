@@ -15,7 +15,7 @@ function ExperienceCard({ }: Props) {
     },
     {
       id: 2,
-  
+      imgSrc : `https://www.codebyjm.com/convey-logo.png`,
       title: 'Convey Digital',
       summary: 'In my role managing enterprise-level WordPress websites, I led client meetings to understand needs, brainstorm solutions, and provide updates, ensuring alignment and strong relationships. I developed custom themes using PHP and JavaScript, adhering to company standards, and created internal documentation for consistency. My work included building custom plugins for third-party integrations, workflow automation, and advanced data handling. I also crafted custom Gutenberg blocks that enhanced the editing experience, empowering clients to manage content easily. Collaborating with cross-functional teams, I helped drive cohesive digital strategies that achieved impactful client outcomes.'
     },
@@ -28,7 +28,7 @@ function ExperienceCard({ }: Props) {
     {
       id: 4,
       title: 'Atlas Digital',
-
+      imgSrc : `https://www.codebyjm.com/atlas-logo.png`,
       summary: 'As the founder and developer at Atlas Digital, I independently managed all aspects of website development, from translating client needs into technical solutions to building high-performance, SEO-optimized sites that drive organic traffic growth. I implemented custom dashboards, enabling users to access real-time results and automated updates, enhancing transparency and engagement. My work included front-end and back-end development, API integration, and troubleshooting to deliver seamless, user-friendly experiences for clients, applying best practices in speed, usability, and conversion optimization.'
     }
   ]
