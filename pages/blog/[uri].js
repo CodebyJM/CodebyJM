@@ -72,6 +72,7 @@ export async function getStaticProps({ params }) {
     },
   });
 
+  console.log(response)
   const post = response?.data?.post;
 
   if (!post) {

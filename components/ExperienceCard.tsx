@@ -35,10 +35,13 @@ function ExperienceCard({ }: Props) {
 
   const renderProjects = () => {
     return projects.map(project => (
-      <article key={project.id} className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] snap-center p-10 
-      cursor-pointer transition-opacity duration-200ms overflow-hidden
-      bg-[#292929] hover:opacity-100 opacity-40 dark:bg-[#292929] bg-gray-100 dark:text-gray-100 text-gray-900"
-  >
+      <article 
+      key={project.id} 
+      className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] snap-center 
+     p-12 md:p-10
+        cursor-pointer transition-opacity duration-200ms overflow-hidden
+        bg-[#292929] hover:opacity-100 opacity-40 dark:bg-[#292929] bg-gray-100 dark:text-gray-100 text-gray-900"
+    >
         <motion.img
           initial={{
             y: -100,

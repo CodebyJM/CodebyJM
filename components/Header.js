@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { client } from '../lib/apolloClient'
-import { gql } from '@apollo/client'
 import { useState } from 'react'
 import ThemeToggle from '../components/ThemeToggle';
 import { Link as ScrollLink } from 'react-scroll';
@@ -127,36 +125,4 @@ export default function Nav({ post }) {
       </nav>
     </div>
   )
-}
-
-export async function getStaticProps({ params }) {
-  const GET_MENU_ITEMS = gql`
-    query GetMenuItems($id: ID = "3") {
-      post(id: $id, idType: URI) {
-        title
-        content
-        date
-        uri
-        author {
-          node {
-            lastName
-            firstName
-          }
-        }
-      }
-    }
-  `
-  const response = await client.query({
-    query: GET_MENU_ITEMS,
-    variables: {
-      id: params.uri,
-    },
-  })
-
-  const posts = response?.data?.posts
-  return {
-    props: {
-      posts,
-    },
-  }
 }
