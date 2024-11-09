@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { client } from '../lib/apolloClient'
 import { gql } from '@apollo/client'
 import { useState } from 'react'
+import ThemeToggle from '../components/ThemeToggle';
 import { Link as ScrollLink } from 'react-scroll';
 
 
@@ -12,7 +13,7 @@ import { Link as ScrollLink } from 'react-scroll';
 export default function Nav({ post }) {
   const [navbar, setNavbar] = useState(false)
   return (
-    <div className="bg-[#181818] z-50 mx-auto max-w-7xl px-10">
+    <div className="bg-white text-black dark:bg-[#181818] dark:text-white z-50 mx-auto max-w-7xl px-10">
       <nav
         className="
       flex flex-wrap
@@ -33,7 +34,7 @@ export default function Nav({ post }) {
         <div>
           <Link
             href="/"
-            className="logo text-xl text-center m-auto hover:text-[#00ffd5] hover:no-underline p-2"
+            className="logo text-xl text-center m-auto hover:text-[#00ffd5] hover:no-underline p-2  text-black dark:text-white "
           >
             JM ~
           </Link>
@@ -79,7 +80,7 @@ export default function Nav({ post }) {
 
         <div className="relative w-full md:flex md:items-center md:w-auto" id="menu">
           <div
-            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 px-5 md:p-0 bg-[#181818] z-50	right-0 ${
+            className={`flex-1 justify-self-center absolute md:relative top-8 md:top-0 pb-3 mt-8 md:block md:pb-0 md:mt-0 px-5 md:p-0 bg-white dark:bg-[#181818] dark:text-white z-50	right-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >
@@ -87,7 +88,7 @@ export default function Nav({ post }) {
               className="
           pt-4
           text-base 
-          text-white
+        text-black dark:text-white   // Light mode: black, Dark mode: white
           md:flex
           md:justify-between 
           md:pt-0"
@@ -116,6 +117,9 @@ export default function Nav({ post }) {
                 >
                   Blog
                 </Link>
+              </li>
+              <li>
+              <ThemeToggle />
               </li>
             </ul>
           </div>

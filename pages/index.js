@@ -4,6 +4,7 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Blog from '../components/Blog'
 import WorkExperience from '../components/WorkExperience'
+import ThemeToggle from '../components/ThemeToggle';
 import client from '../lib/apolloClient'
 import { GET_BLOG_POSTS } from '../queries/getBlogPosts'
 
@@ -11,15 +12,13 @@ import { GET_BLOG_POSTS } from '../queries/getBlogPosts'
 
 export default function Home({ posts }) {
 
-  console.log("Posts data in Home component:", posts); // Logs on the client-side in the browser console
-
   return (
     <div>
       <Head>
         <title>Developer, Designer, & Creator | CodeByJM</title>
       </Head>
-      <div className="bg-[#181818] text-white" id="about">
-        <section id="Header">
+      <div className="bg-white text-black dark:bg-[#181818] dark:text-white">
+      <section id="Header">
           <Header />
         </section>
 
@@ -31,7 +30,7 @@ export default function Home({ posts }) {
           <About />
         </section>
 
-        <section id="workexp">
+        <section id="projects">
           <WorkExperience />
         </section>
 

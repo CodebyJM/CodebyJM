@@ -28,7 +28,10 @@ export default function About({}: Props) {
 
   const renderHighlight = () => {
     return skills.map((skill) => (
-        <span className="text-[#00ffd5] bg-[rgb(36,36,36)] text-base font-medium mr-2 inline-block px-4 py-2 mt-8 rounded">{skill}</span>
+        <span className="dark:text-[#00ffd5] text-[#0077b6] 
+        bg-[rgb(36,36,36)] dark:bg-[rgb(36,36,36)] bg-gray-200 
+        text-base font-medium mr-2 inline-block px-4 py-2 mt-8 rounded transition-colors duration-300"
+      >{skill}</span>
     ))
   }
   return (
@@ -57,13 +60,13 @@ export default function About({}: Props) {
 
     </motion.div>
     <div className='space-y-10 md:px-10 flex-1 '>
-        <h1 className="uppercase tracking-[2px] text-white text-6xl">
-          <div className="underline decoration-[#00ffd5]">About</div>
+        <h1 className="uppercase tracking-[2px]text-black dark:text-white text-6xl">
+          <div className="underline dark:decoration-[#00ffd5] decoration-[#0077b6]">About</div>
         </h1>
-      <p className=' content m-auto md:ml-0 text-white max-w-md leading-[3rem]'>
+      <p className=' content m-auto md:ml-0 text-black dark:text-white max-w-md leading-[3rem]'>
       Throughout my journey, I've had the privilege of working alongside talented engineers, designers, business analysts, and product owners, each bringing unique perspectives that have deepened my understanding of collaboration and innovation. I place high value on creating applications that are not only reusable and scalable at an enterprise level but also deliver an exceptional user experience. Outside of work, I’m passionate about Brazilian Jiu-Jitsu, gaming, and spending quality time with my wife.</p>
-          <div className='content m-auto md:ml-0 text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
-      <h4 className='text-white pt-5 text-2xl'>My Skills</h4>
+          <div className='content m-auto md:ml-0 text-black dark:text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
+      <h4 className='text-black dark:text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
       
     </div>
