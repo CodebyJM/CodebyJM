@@ -13,7 +13,7 @@ export default function SlugPage({ post }) {
   });
 
   return (
-    <div className='bg-[#181818] text-white'>
+    <div className="bg-white text-black dark:bg-[#181818] dark:text-white">
       <Head>
         <title>{post.title}</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
@@ -29,19 +29,19 @@ export default function SlugPage({ post }) {
 
       {/* Breadcrumb Link */}
       <div className="max-w-3xl mx-auto px-6 py-4">
-        <Link href="/" className="text-custom-green hover:underline">Home</Link>
+        <Link href="/" className="text-[#0077b6] dark:text-custom-green hover:underline">Home</Link>
         <span className="text-gray-400"> / </span>
-        <span className="text-white">{post.title}</span>
+        <span className="text-black dark:text-white">{post.title}</span>
       </div>
 
-      <main className="pt-8 pb-16 max-w-3xl mx-auto" style={{height: '100vh'}}>
+      <main className="pt-8 pb-16 max-w-3xl mx-auto">
         <div className="siteHeader py-10">
-          <h1 className="text-white text-center uppercase tracking-[2px] text-6xl mb-6">{post.title}</h1>
-          <p className="text-white text-center">
+          <h1 className="text-black dark:text-white text-center uppercase tracking-[2px] text-6xl mb-6">{post.title}</h1>
+          <p className="text-black dark:text-white text-center">
             {`${post.author.node.firstName} ${post.author.node.lastName}`} &nbsp;&nbsp;|&nbsp;&nbsp;{dateFormatter.format(new Date(post.date))}
           </p>
         </div>
-        <article className="lead leading-loose" dangerouslySetInnerHTML={{ __html: post.content }}></article>
+        <article className="lead leading-loose text-black dark:text-white" dangerouslySetInnerHTML={{ __html: post.content }}></article>
       </main>
     </div>
   );
