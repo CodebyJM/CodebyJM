@@ -4,7 +4,6 @@ import Hero from '../components/Hero'
 import About from '../components/About'
 import Blog from '../components/Blog'
 import WorkExperience from '../components/WorkExperience'
-import ThemeToggle from '../components/ThemeToggle';
 import client from '../lib/apolloClient';
 import { GET_BLOG_POSTS } from '../queries/getBlogPosts'
 

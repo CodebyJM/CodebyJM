@@ -38,7 +38,7 @@ export default function SlugPage({ post }) {
         <div className="siteHeader py-10">
           <h1 className="text-black dark:text-white text-center uppercase tracking-[2px] text-6xl mb-6">{post.title}</h1>
           <p className="text-black dark:text-white text-center">
-            {`${post.author.node.firstName} ${post.author.node.lastName}`} &nbsp;&nbsp;|&nbsp;&nbsp;{dateFormatter.format(new Date(post.date))}
+            {dateFormatter.format(new Date(post.date))}
           </p>
         </div>
         <article className="lead leading-loose text-black dark:text-white" dangerouslySetInnerHTML={{ __html: post.content }}></article>
@@ -72,7 +72,7 @@ export async function getStaticProps({ params }) {
     },
   });
 
-  console.log(response)
+
   const post = response?.data?.post;
 
   if (!post) {
