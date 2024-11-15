@@ -33,10 +33,10 @@ export default function Home({ posts }) {
           <WorkExperience />
         </section>
 
-    
+{/*     
         <section id="blog">
           <Blog posts={posts} />
-        </section>
+        </section> */}
 
         <section id='content'></section>
       </div>
@@ -49,7 +49,7 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: GET_BLOG_POSTS,
   })
-
+l
   console.log("Data fetched in getStaticProps:", data); // This will log on the server
 
 
