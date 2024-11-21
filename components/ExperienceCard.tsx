@@ -11,7 +11,7 @@ function ExperienceCard({ }: Props) {
       id: 1,
       imgSrc : `https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/source/rev-6ea1eae/ntslogistics.com/wp-content/uploads/2019/11/NTS-logo.svg`,
       title: 'Nationwide Transport Services',
-      summary: 'As a Senior Software Developer at Nationwide Transport Services, I returned to lead efforts in rebuilding Gutenberg blocks, creating a streamlined workflow across brands that boosted deployment efficiency. I architected a high-performing form component, driving a 20% conversion increase and elevating data quality for sales. Collaborating with product managers, designers, and stakeholders, I contributed technical insights and led new UI feature planning and implementation, aligning project goals with business objectives for successful, impactful launches.'
+      summary: 'As the team lead of a multidisciplinary marketing team of 8+ members—including designers, developers, and SEO specialists—I oversaw the deployment of scalable WordPress websites optimized for SEO, performance, and user experience. My leadership ensured seamless collaboration, resulting in websites that met high performance standards and achieved measurable SEO success.'
     },
     {
       id: 2,

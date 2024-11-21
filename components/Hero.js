@@ -8,7 +8,7 @@ function Hero() {
         <h1 className="h1  text-black dark:text-white my-3 font-semibold scroll-px-10">
           Yo, I'm Joao.{' '}
           <div className="h4 text-[#8F9094] base-font">
-            <span className=" text-black dark:text-white">Software Engineer.</span><br></br> Self-taught with an interest in Web Development.
+            <span className=" text-black dark:text-white">Developer, Designer, & Creator</span><br></br> 
           </div>
           
         </h1>

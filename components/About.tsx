@@ -64,7 +64,7 @@ export default function About({}: Props) {
           <div className="underline dark:decoration-[#00ffd5] decoration-[#0077b6]">About</div>
         </h1>
       <p className=' content m-auto md:ml-0 text-black dark:text-white max-w-md leading-[3rem]'>
-      Throughout my journey, I've had the privilege of working alongside talented engineers, designers, business analysts, and product owners, each bringing unique perspectives that have deepened my understanding of collaboration and innovation. I place high value on creating applications that are not only reusable and scalable at an enterprise level but also deliver an exceptional user experience. Outside of work, I’m passionate about Brazilian Jiu-Jitsu, gaming, and spending quality time with my wife.</p>
+      Throughout my journey, I've had the privilege of working alongside talented engineers, designers, business analysts, and product owners, each bringing unique perspectives that have deepened my understanding of collaboration and innovation. I specialize in developing marketing-focused websites that are not only scalable and reusable at an enterprise level but also optimized for SEO and tailored to deliver lead generation. Outside of work, I’m passionate about Brazilian Jiu-Jitsu, and enjoying quality time with my wife.</p>
           <div className='content m-auto md:ml-0 text-black dark:text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
       <h4 className='text-black dark:text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
