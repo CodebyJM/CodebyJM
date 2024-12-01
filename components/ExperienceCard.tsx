@@ -9,7 +9,7 @@ function ExperienceCard({ }: Props) {
   const projects = [
     {
       id: 1,
-      imgSrc : `https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/source/rev-6ea1eae/ntslogistics.com/wp-content/uploads/2019/11/NTS-logo.svg`,
+      imgSrc : `https://cdn-ikpnonn.nitrocdn.com/waDtbKwbaGRAyvseWdfAzZVchgcglzdg/assets/images/source/rev-27b7d4b/ntslogistics.com/wp-content/uploads/2019/11/NTS-logo.svg`,
       title: 'Nationwide Transport Services',
       summary: 'As the team lead of a multidisciplinary marketing team of 8+ members—including designers, developers, and SEO specialists—I oversaw the deployment of scalable WordPress websites optimized for SEO, performance, and user experience. My leadership ensured seamless collaboration, resulting in websites that met high performance standards and achieved measurable SEO success.'
     },
