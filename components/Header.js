@@ -109,14 +109,6 @@ export default function Nav({ post }) {
                 </Link>
               </li>
               <li>
-                <Link
-                  className="md:p-4 md:py-2 py-4 block hover:text-[#00ffd5] hover:no-underline"
-                  href="#blog"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
               <ThemeToggle />
               </li>
             </ul>

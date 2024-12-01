@@ -63,8 +63,9 @@ export default function About({}: Props) {
         <h1 className="uppercase tracking-[2px]text-black dark:text-white text-6xl">
           <div className="underline dark:decoration-[#00ffd5] decoration-[#0077b6]">About</div>
         </h1>
-      <p className=' content m-auto md:ml-0 text-black dark:text-white max-w-md leading-[3rem]'>
-      Throughout my journey, I've had the privilege of working alongside talented engineers, designers, business analysts, and product owners, each bringing unique perspectives that have deepened my understanding of collaboration and innovation. I specialize in developing marketing-focused websites that are not only scalable and reusable at an enterprise level but also optimized for SEO and tailored to deliver lead generation. Outside of work, I’m passionate about Brazilian Jiu-Jitsu, and enjoying quality time with my wife.</p>
+      <p className=' content m-auto md:ml-0 text-black dark:text-white max-w-md leading-[3rem]'>Throughout my career, I’ve had the privilege of collaborating with engineers, designers, business analysts, and product owners, each contributing unique insights that have enriched my approach to building impactful solutions. My expertise lies in creating and managing websites for service-based businesses, designed to generate high volumes of organic traffic while driving lead generation. I specialize in serving as a digital partner crafting marketing-driven solutions that are optimized for SEO and strategically designed to drive measurable results.
+
+Beyond work, I’m passionate about Brazilian Jiu-Jitsu and treasure quality time with my wife & family.</p>
           <div className='content m-auto md:ml-0 text-black dark:text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
       <h4 className='text-black dark:text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
