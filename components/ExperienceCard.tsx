@@ -53,7 +53,7 @@ function ExperienceCard({ }: Props) {
           className='w-32 h-32 rounded-full md:rounded-full xl:w-[200px] xl:h-[200px] object-center' src={project.imgSrc} alt="" />
 
 
-        <div className='px-0 md:px-10'>
+        <div className='px-4 md:px-10'>
           {/* <h4 className='text-4xl font-light'>Full Stack Development</h4> */}
 
           <p className='font-bold text-2xl mt-1'>{project.title}</p>

@@ -66,7 +66,7 @@ export default function About({}: Props) {
       <p className=' content m-auto md:ml-0 text-black dark:text-white max-w-md leading-[3rem]'>Throughout my career, I’ve had the privilege of collaborating with engineers, designers, business analysts, and product owners, each contributing unique insights that have enriched my approach to building impactful solutions. My expertise lies in creating and managing websites for service-based businesses, designed to generate high volumes of organic traffic while driving lead generation. I specialize in serving as a digital partner crafting marketing-driven solutions that are optimized for SEO and strategically designed to drive measurable results.
 
 Beyond work, I’m passionate about Brazilian Jiu-Jitsu and treasure quality time with my wife & family.</p>
-          <div className='content m-auto md:ml-0 text-black dark:text-white max-w-md'><span className="font-bold">TL;DR </span> I love my family, coding, coffee, fitness, and tech.</div>
+          
       <h4 className='text-black dark:text-white pt-5 text-2xl'>My Skills</h4>
       {renderHighlight()}
       
